@@ -32,7 +32,7 @@ double expn(double x, uint16_t count) {
 
 double sinn(double x, uint16_t count) {
     double sin = 0;
-    uint16_t n = 2;
+    uint16_t n = 1;
     for (uint16_t i = 1;i <= (2*count-1);i++) { 
         if ((i % 2 == 1) && (n % 2 == 1)) {
             sin += calcItem(x, i);
@@ -48,7 +48,7 @@ double sinn(double x, uint16_t count) {
 
 double cosn(double x, uint16_t count) {
     double cos = 1;
-    uint16_t n = 1;
+    uint16_t n = 2;
     for (uint16_t i = 2;i <= (2*count-2);i++) {
         if ((i % 2 == 0) && (n % 2 == 1)) {
             cos += calcItem(x, i);
