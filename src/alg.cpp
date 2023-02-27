@@ -4,7 +4,7 @@
 
 
 double pown(double value, uint16_t n) {
-    for (uint16_t i = 1;i < n;i++)
+    for (uint16_t i = 1; i < n; i++)
         value *= value;
     return value;
 }
