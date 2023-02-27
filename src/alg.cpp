@@ -53,8 +53,7 @@ double cosn(double x, uint16_t count) {
         if ((i % 2 == 0) && (n % 2 == 1)) {
             cos += calcItem(x, i);
             n++;
-        }
-        else if ((i % 2 == 0) && (n % 2 == 0)) {
+        } else if ((i % 2 == 0) && (n % 2 == 0)) {
             cos -= calcItem(x, i);
             n++;
         }
