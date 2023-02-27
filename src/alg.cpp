@@ -47,7 +47,7 @@ double sinn(double x, uint16_t count) {
 }
 
 double cosn(double x, uint16_t count) {
-    double cos = 0;
+    double cos = 1;
     uint16_t n = 1;
     for (uint16_t i = 0;i <= (2*count-2);i++) {
         if ((i % 2 == 0) && (n % 2 == 1)) {
