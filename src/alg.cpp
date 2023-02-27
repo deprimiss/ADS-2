@@ -38,7 +38,7 @@ double sinn(double x, uint16_t count) {
             sin += calcItem(x, i);
             n++;
         }
-        if ((i % 2 == 1) && (n % 2 == 0)) {
+        else if ((i % 2 == 1) && (n % 2 == 0)) {
             sin -= calcItem(x, i);
             n++;
         }
