@@ -49,7 +49,7 @@ double sinn(double x, uint16_t count) {
 double cosn(double x, uint16_t count) {
     double cos = 1;
     uint16_t n = 2;
-    for (uint16_t i = 2;i <= (2*count-2);i++) {
+    for (uint16_t i = 2; i <= (2*count-2); i++) {
         if ((i % 2 == 0) && (n % 2 == 1)) {
             cos += calcItem(x, i);
             n++;
