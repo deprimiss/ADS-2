@@ -49,12 +49,12 @@ double sinn(double x, uint16_t count) {
 double cosn(double x, uint16_t count) {
     double cos = 0;
     uint16_t n = 1;
-    for (uint16_t i = 0;i < count;i++) {
+    for (uint16_t i = 0;i <= (2*count-2);i++) {
         if ((i % 2 == 0) && (n % 2 == 1)) {
             cos += calcItem(x, i);
             n++;
         }
-        if ((i % 2 == 0) && (n % 2 == 0)) {
+        else if ((i % 2 == 0) && (n % 2 == 0)) {
             cos -= calcItem(x, i);
             n++;
         }
