@@ -31,9 +31,8 @@ double expn(double x, uint16_t count) {
 double sinn(double x, uint16_t count) {
     double sin = 0;
     for (uint16_t i = 1; i <= (2*count-1); i++) {
-            sin += pown(-1,i - 1)*calcItem(x, i);
+            sin += pown(-1, i - 1)*calcItem(x, i);
         }
-    }
     return sin;
 }
 
